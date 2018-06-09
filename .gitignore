@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!modules/**
+!themes/**
+# etc...
+
+# ...even if they are in subdirectories
+!*/
