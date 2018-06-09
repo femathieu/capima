@@ -22,8 +22,10 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  */
+
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+// var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 var plugins = [];
 
@@ -31,13 +33,24 @@ plugins.push(
   new ExtractTextPlugin('../css/theme.css')
 );
 
+// plugins.push(
+//   new BrowserSyncPlugin(// BrowserSync options
+//     {
+//       // browse to http://localhost:3000/ during development
+//       host: 'localhost',
+//       port: 3000,
+//       // proxy the Webpack Dev Server endpoint
+//       // (which should be serving on http://localhost:3100/)
+//       // through BrowserSync
+//       //proxy: 'http://localhost:3100/panammedia',
+//       server: { baseDir: ['panammedia'] }
+//     }
+//   )
+// );
+
 module.exports = [{
   // JavaScript
   entry: [
-    './js/theme.js',
-    './css/normalize.css',
-    './css/example.less',
-    './css/st/dev.styl',
     './css/theme.scss'
   ],
   output: {
@@ -45,33 +58,33 @@ module.exports = [{
     filename: 'theme.js'
   },
   module: {
-    loaders:  [{
+    loaders: [{
       test: /\.js$/,
       exclude: /node_modules/,
       loaders: ['babel-loader']
     }, {
       test: /\.scss$/,
       loader: ExtractTextPlugin.extract(
-          "style",
-          "css-loader?sourceMap!postcss!sass-loader?sourceMap"
+        "style",
+        "css-loader?sourceMap!postcss!sass-loader?sourceMap"
       )
     }, {
       test: /\.styl$/,
       loader: ExtractTextPlugin.extract(
-          "style",
-          "css-loader?sourceMap!postcss!stylus-loader?sourceMap"
+        "style",
+        "css-loader?sourceMap!postcss!stylus-loader?sourceMap"
       )
     }, {
       test: /\.less$/,
       loader: ExtractTextPlugin.extract(
-          "style",
-          "css-loader?sourceMap!postcss!less-loader?sourceMap"
+        "style",
+        "css-loader?sourceMap!postcss!less-loader?sourceMap"
       )
     }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract(
-          'style',
-          'css-loader?sourceMap!postcss-loader'
+        'style',
+        'css-loader?sourceMap!postcss-loader'
       )
     }, {
       test: /.(png|woff(2)?|eot|ttf|svg|jpg)(\?[a-z0-9=\.]+)?$/,
@@ -84,5 +97,17 @@ module.exports = [{
   plugins: plugins,
   resolve: {
     extensions: ['', '.js', '.scss', '.styl', '.less', '.css']
-  }
+  },
+  // devServer: {
+  //   contentBase: __dirname + '../assets/theme.css',
+  //   historyApiFallback: true,
+	// 	// compress: true,
+	// 	// port: 3000,
+	// 	// stats: 'errors-only',
+  //   hot: true, 
+  //   inline: true,
+  //   open: true
+	// },
+  // devtool: "eval-source-map"
+  
 }];
