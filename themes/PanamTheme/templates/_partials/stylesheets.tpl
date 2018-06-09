@@ -22,7 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<link rel ="stylesheet" href="{$stylesheet.uri}/dev/prestashop/themes/PanamTheme/assets/css/bootstrap.css" type="text/css"/>
+{* <link rel ="stylesheet" href="{$stylesheet.uri}/panammedia/themes/PanamTheme/assets/css/bootstrap.css" type="text/css"/> *}
 {foreach $stylesheets.external as $stylesheet}
   <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
 {/foreach}

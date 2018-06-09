@@ -6,6 +6,9 @@
 !modules/**
 !themes/**
 # etc...
+themes/PanamTheme/_dev/package-lock.json
+themes/PanamTheme/_dev/node_modules/**
+modules/**/css/**
 
 # ...even if they are in subdirectories
 !*/
