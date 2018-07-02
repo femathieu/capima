@@ -42,3 +42,33 @@
     </a>
   {/block} *}
 </p>
+
+<div class="footer-list">
+  <div class="list-service">
+    <ul>
+      <li><a href="#">Impression</a></li>
+      <li><a href="#">Web</a></li>
+      <li><a href="#">Image de marque</a></li>
+      <li><a href="#">A propos</a></li>
+      <li><a href="#">Carrière</a></li>
+      <li><a href="#">Nous joindre</a></li>
+    </ul>
+  </div>
+  <div class="list-social">
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Linkedin</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </div>
+</div>
+<div class="footer-logo">
+
+</div>
+<div class="footer-adress">
+  <p>914, rue Laurier, 2e étage</p>
+  <p>Beloil, QC J3G 4K9</p>
+  <p>514.319.0119</p>
+  <p>info@panam-media.com</p>
+</div>

@@ -88,4 +88,11 @@ class MyModule extends Module{
       );
       return $this->display(__File__, 'mymodule.tpl');
     }
+
+  // public function hookdisplayHeader($params){
+  //   $this->context->controller->registerJavascript('my-module', 'modules/' . $this->name . '/views/js/my-module.js', array(
+  //   'position' => 'bottom',
+  //    'priority' => 150
+  //   ));
+  // }
 }
