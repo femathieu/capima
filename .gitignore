@@ -8,6 +8,7 @@
 # etc...
 themes/PanamTheme/_dev/package-lock.json
 themes/PanamTheme/_dev/node_modules/**
+themes/PanamTheme/_dev/assets/css/theme.css
 modules/**/css/**
 
 # ...even if they are in subdirectories

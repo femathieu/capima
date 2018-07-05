@@ -38,7 +38,7 @@
 
     {block name='page_content_container'}
       <section id="content" class="page-content">
-        <div class="container">
+        <div class="container_old">
           {block name='page_content'}
             <!-- Page content -->
           {/block}
