@@ -6477,7 +6477,7 @@ h3 {
         border-bottom: 1px solid white; }
 
 .home_expertise {
-  height: 300px;
+  margin-bottom: 20px;
   background: black; }
   .home_expertise .expertise-title {
     text-transform: uppercase;
@@ -6502,3 +6502,125 @@ h3 {
       position: absolute;
       bottom: 15px;
       right: 10px; }
+  .home_expertise .expertise-text {
+    margin-top: 20px;
+    text-align: center;
+    color: white; }
+  .home_expertise .services .service {
+    cursor: pointer;
+    display: block;
+    margin: 30px;
+    position: relative;
+    padding-left: 10px;
+    overflow: hidden;
+    color: white; }
+    .home_expertise .services .service:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 5px;
+      background: blue;
+      left: 0px;
+      top: 6px; }
+    .home_expertise .services .service .block-title {
+      text-transform: uppercase; }
+    .home_expertise .services .service .block-resum {
+      text-align: left; }
+
+.best_seller .sale-title {
+  text-transform: uppercase;
+  position: relative;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  color: black; }
+  .best_seller .sale-title:before {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: black;
+    position: absolute;
+    bottom: 15px;
+    left: 10px; }
+  .best_seller .sale-title:after {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: black;
+    position: absolute;
+    bottom: 15px;
+    right: 10px; }
+
+.best_seller .product-grid {
+  margin-top: 20px;
+  padding: 15px; }
+
+.best_seller .product {
+  height: 350px;
+  background: wheat;
+  position: relative; }
+  .best_seller .product .product-title {
+    text-transform: uppercase;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    right: 25px; }
+  .best_seller .product .hover-desc {
+    display: none; }
+  .best_seller .product:hover .hover-desc {
+    display: block;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    background-color: rgba(23, 32, 42, 0.5);
+    z-index: 2;
+    border-radius: 10px;
+    cursor: pointer; }
+  .best_seller .product:before {
+    content: '';
+    width: 48%;
+    height: 48%;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    top: 15px;
+    left: 15px; }
+  .best_seller .product:after {
+    content: '';
+    width: 48%;
+    height: 48%;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    bottom: 15px;
+    right: 15px; }
+
+.testimony .testimony-title {
+  text-transform: uppercase;
+  position: relative;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  color: black; }
+  .testimony .testimony-title:before {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: black;
+    position: absolute;
+    bottom: 15px;
+    left: 10px; }
+  .testimony .testimony-title:after {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: black;
+    position: absolute;
+    bottom: 15px;
+    right: 10px; }

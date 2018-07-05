@@ -61,7 +61,8 @@ module.exports = [{
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules/,
-      loaders: ['babel-loader']
+      loaders: "eslint-loader",
+      // loaders: ['babel-loader']
     }, {
       test: /\.scss$/,
       loader: ExtractTextPlugin.extract(

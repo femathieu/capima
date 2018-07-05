@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-    <name>home_sales</name>
-    <displayName><![CDATA[Home_sales]]></displayName>
+    <name>best_seller</name>
+    <displayName><![CDATA[best_seller]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Description of home_sales.]]></description>
+    <description><![CDATA[Description of best_seller.]]></description>
     <author><![CDATA[Pierro Lasticot]]></author>
     <tab><![CDATA[front_office_features]]></tab>
 	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>

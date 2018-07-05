@@ -1,9 +1,10 @@
 <section class="home_sales">
-  <!-- <div class="container"> -->
-  <h3 class="sale-title">
-    découvrez nos promotions
-  </h3>
-
+  <div class="container">
+    <h3 class="sale-title">
+      découvrez nos promotions
+    </h3>
+  </div>
+  
   <div class="salewall">
     <div class="container">
       <div class="row">
