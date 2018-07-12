@@ -43,32 +43,42 @@
   {/block} *}
 </p>
 
-<div class="footer-list">
-  <div class="list-service">
-    <ul>
-      <li><a href="#">Impression</a></li>
-      <li><a href="#">Web</a></li>
-      <li><a href="#">Image de marque</a></li>
-      <li><a href="#">A propos</a></li>
-      <li><a href="#">Carrière</a></li>
-      <li><a href="#">Nous joindre</a></li>
-    </ul>
+<div class="container">
+  <div class="logo col-lg-1">
+    <img class="img-responsive panam-logo" src="{$shop.logo}" alt="{$shop.name}">
   </div>
-  <div class="list-social">
-    <ul>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Linkedin</a></li>
-      <li><a href="#">Instagram</a></li>
-    </ul>
-  </div>
-</div>
-<div class="footer-logo">
 
-</div>
-<div class="footer-adress">
-  <p>914, rue Laurier, 2e étage</p>
-  <p>Beloil, QC J3G 4K9</p>
-  <p>514.319.0119</p>
-  <p>info@panam-media.com</p>
+  <div class="row">
+    <!-- <div class="footer-list"> -->
+      <div class="list-footer list-service  col-3">
+        <ul>
+          <li><a href="#">Impression</a></li>
+          <li><a href="#">Web</a></li>
+          <li><a href="#">Image de marque</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Carrière</a></li>
+          <li><a href="#">Nous joindre</a></li>
+        </ul>
+      </div>
+      <div class="list-footer list-social col-3">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    <!-- </div> -->
+    
+    <div class="list-footer newslette0r col-3">
+      <a href="#" class="subscribe">s'inscrire à une newsletter</a>
+    </div>
+    
+    <div class="list-footer footer-adress col-3">
+      <p>914, rue Laurier, 2e étage</p>
+      <p>Beloil, QC J3G 4K9</p>
+      <p>514.319.0119</p>
+      <p>info@panam-media.com</p>
+    </div>
+  </div>
 </div>
