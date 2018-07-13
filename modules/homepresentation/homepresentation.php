@@ -171,14 +171,28 @@ public function displayForm()
     return $helper->generateForm($fields_form);
 }
 
+public static function getCategory($id) {
+    $category = new Category($id, Context::getContext()->language->id);
+    //return array('name' => $category->name);
+    return $category;
+}
 
+public static function getPage($id){
+    $page = new CMS($id, Context::getContext()->language->id);
+    return $page;
+}
 
 public function hookDisplayHome($params)
 {
   $this->context->smarty->assign(
       array(
           'homepresentation_name' => Configuration::get('HOMEPRESENTATION_NAME'),
-          'homepresentation_link' => $this->context->link->getModuleLink('homepresentation', 'display')
+          'homepresentation_link' => $this->context->link->getModuleLink('homepresentation', 'display'),
+          'category_web' => $this->getCategory(12),
+          'category_impression' => $this->getCategory(11),
+          'page_about' => $this->getPage(4),
+          'page_carriere' => $this->getPage(6),
+          'page_nousrejoindre' => $this->getPage(7),
       )
   );
   return $this->display(__FILE__, 'homepresentation.tpl');
@@ -191,8 +205,6 @@ public function hookDisplayHeader()
   $this->context->controller->addCSS($this->_path.'css/homepresentation.css', 'all');
   $this->context->controller->addJS($this->_path . 'js/script.js');//path of js
   $this->context->controller->addJS($this->_path . 'js/popper.min.js');//path of js
-  
-
 }
 
 

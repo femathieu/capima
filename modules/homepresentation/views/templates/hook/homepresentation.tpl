@@ -1,5 +1,5 @@
 <section class="block-section block-section-home">
-    <div class="bg-section"></div>
+    <div class="bg-section" background-img=></div>
       <div class="row no-gutters row-content">
         <div class="col-10">
           <div class="row no-gutters align-items-center row-title-contact">
@@ -9,15 +9,15 @@
             <div class="col-12">
               <ul class="nav nav-menu">
                 <li class="nav-item col-2">
-                  <a class="nav-link active" href="{url entity='category' id=10 id_lang=1}">
-                    <h2 class="title-menu">Impression</h2>
-                    <div class="info-menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit.</div>
+                  <a class="nav-link active" href="{url entity='category' id=$category_impression->id id_lang=1}">
+                    <h2 class="title-menu">{$category_impression->name}</h2>
+                    <div class="info-menu">{$category_impression->description|strip_tags}</div>
                   </a>
                 </li>
                 <li class="nav-item col-2">
-                  <a class="nav-link" href="{url entity='category' id=11 id_lang=1}">
-                    <h2 class="title-menu">Web</h2>
-                    <div class="info-menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit.</div>
+                  <a class="nav-link" href="{url entity='category' id=$category_web->id id_lang=1}">
+                    <h2 class="title-menu">{$category_web->name}</h2>
+                    <div class="info-menu">{$category_web->description|strip_tags}</div>
                   </a>
                 </li>
                 <li class="nav-item col-2">
@@ -27,21 +27,21 @@
                   </a>
                 </li>
                 <li class="nav-item col-2">
-                  <a class="nav-link" href="{url entity='cms' id=4 id_lang=1}">
-                    <h2 class="title-menu">A propos</h2>
-                    <div class="info-menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit.</div>
+                  <a class="nav-link" href="{url entity='cms' id=$page_about->id id_lang=1}">
+                    <h2 class="title-menu">{$page_about->meta_title}</h2>
+                    <div class="info-menu">{$page_about->meta_description}</div>
                   </a>
                 </li>
                 <li class="nav-item col-2">
-                  <a class="nav-link" href="#">
-                    <h2 class="title-menu">Carrière</h2>
-                    <div class="info-menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit.</div>
+                  <a class="nav-link" href="{url entity='cms' id=$page_carriere->id id_lang=1}">
+                    <h2 class="title-menu">{$page_carriere->meta_title}</h2>
+                    <div class="info-menu">{$page_carriere->meta_description}</div>
                   </a>
                 </li>
                 <li class="nav-item col-2">
-                  <a class="nav-link" href="{url entity='cms' id=8 id_lang=1}">
-                    <h2 class="title-menu">Nous joindre</h2>
-                    <div class="info-menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit.</div>
+                  <a class="nav-link" href="{url entity='cms' id=$page_nousrejoindre->id id_lang=1}">
+                    <h2 class="title-menu">{$page_nousrejoindre->meta_title}</h2>
+                    <div class="info-menu">{$page_nousrejoindre->meta_description}</div>
                   </a>
                 </li>
               </ul>
